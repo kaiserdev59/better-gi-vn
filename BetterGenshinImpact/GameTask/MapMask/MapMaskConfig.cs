@@ -13,6 +13,8 @@ public partial class MapMaskConfig : ObservableObject
     public const string HoYoLabLanguageEnUs = "en-us";
     public const string HoYoLabLanguagePtPt = "pt-pt";
     public const string HoYoLabLanguageEsEs = "es-es";
+    /// <summary>HoYoLAB 地图接口的越南语语言代码</summary>
+    public const string HoYoLabLanguageViVn = "vi-vn";
 
     /// <summary>
     /// 是否启用

@@ -175,7 +175,8 @@ namespace BetterGenshinImpact.ViewModel
         [
             new(MapMaskConfig.HoYoLabLanguageEnUs, "English (en-us)"),
             new(MapMaskConfig.HoYoLabLanguagePtPt, "Português (pt-pt)"),
-            new(MapMaskConfig.HoYoLabLanguageEsEs, "Español (es-es)")
+            new(MapMaskConfig.HoYoLabLanguageEsEs, "Español (es-es)"),
+            new(MapMaskConfig.HoYoLabLanguageViVn, "Tiếng Việt (vi-vn)")
         ];
 
         [ObservableProperty] private MapPointApiProviderOption? _selectedMapPointApiProviderOption;

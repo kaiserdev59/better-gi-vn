@@ -72,6 +72,11 @@ internal static partial class I18nScanner
             {
                 key = NormalizeCSharpEscapes(key);
             }
+            else if (key.Length >= 2 && key[0] == '\'' && key[^1] == '\'')
+            {
+                // WPF 解析 {i18n:T '...'} 时会剥离外层单引号（常用于含逗号或等号的文案）
+                key = key[1..^1];
+            }
 
             if (key.Length > 0 && knownKeys.Add(key))
             {

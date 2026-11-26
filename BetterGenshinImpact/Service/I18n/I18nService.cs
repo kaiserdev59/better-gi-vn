@@ -34,6 +34,7 @@ public sealed class I18nService : INotifyPropertyChanged
         new("en", "English"),
         new("ja", "日本語"),
         new("ru", "Русский"),
+        new("vi", "Tiếng Việt"),
     ];
 
     /// <summary>

@@ -38,6 +38,7 @@ public sealed class GameTextService
         new("zh-Hant", "繁體中文"),
         new("en", "English"),
         new("fr", "Français"),
+        new("vi", "Tiếng Việt"),
     ];
 
     private static readonly Lazy<GameTextService> LazyInstance =

@@ -74,6 +74,7 @@ public class HoYoLabMapApiService : IHoYoLabMapApiService
         {
             MapMaskConfig.HoYoLabLanguagePtPt => MapMaskConfig.HoYoLabLanguagePtPt,
             MapMaskConfig.HoYoLabLanguageEsEs => MapMaskConfig.HoYoLabLanguageEsEs,
+            MapMaskConfig.HoYoLabLanguageViVn => MapMaskConfig.HoYoLabLanguageViVn,
             MapMaskConfig.HoYoLabLanguageEnUs => MapMaskConfig.HoYoLabLanguageEnUs,
             _ => DefaultLang
         };
