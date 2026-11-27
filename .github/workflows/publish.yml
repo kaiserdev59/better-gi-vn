@@ -94,6 +94,16 @@ jobs:
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 10.x
+      - name: 固定使用 .NET 10 SDK（避免 runner 预装的 .NET 11 触发 NETSDK1236 丢 DLL）
+        run: |
+          @'
+          {
+            "sdk": {
+              "version": "10.0.100",
+              "rollForward": "latestMinor"
+            }
+          }
+          '@ | Set-Content -LiteralPath global.json -Encoding utf8NoBOM
       - name: 更新 csproj 文件版本号
         run: |
           $version = '${{ needs.validate.outputs.version }}'
